@@ -1,8 +1,19 @@
 # 像素音浪姬 / Pixel Beat Idol
 
+[![Release](https://img.shields.io/github/v/release/ding7015869-alt/pixel-anime-player?style=for-the-badge)](https://github.com/ding7015869-alt/pixel-anime-player/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-35f7ff?style=for-the-badge)](LICENSE)
+[![Electron](https://img.shields.io/badge/Electron-desktop-fff36d?style=for-the-badge)](https://www.electronjs.org/)
+[![React](https://img.shields.io/badge/React-UI-ff5ec8?style=for-the-badge)](https://react.dev/)
+
+![Pixel Beat Idol demo](docs/media/demo.gif)
+
 一个 Electron + Vite + React 桌面音乐播放器：像素二次元舞台、原创角色、粒子特效、节拍分析、同步歌词、本地照片像素化，还有中英文界面切换。
 
 An Electron + Vite + React desktop music player with a pixel-anime stage, original beat-reactive idols, particle effects, lyric sync, local photo pixelization, and a bilingual Chinese/English UI.
+
+[Download Windows build](https://github.com/ding7015869-alt/pixel-anime-player/releases/latest) · [Launch kit / 推广文案](docs/launch-kit.md)
+
+![Pixel Beat Idol social preview](docs/media/social-preview.png)
 
 ## 亮点
 
