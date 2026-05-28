@@ -1,87 +1,128 @@
-# 像素音浪姬 / Pixel Beat Idol
+# 🎵 像素音浪姬 / Pixel Beat Idol
 
 [![Release](https://img.shields.io/github/v/release/ding7015869-alt/pixel-anime-player?style=for-the-badge)](https://github.com/ding7015869-alt/pixel-anime-player/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-35f7ff?style=for-the-badge)](LICENSE)
 [![Electron](https://img.shields.io/badge/Electron-desktop-fff36d?style=for-the-badge)](https://www.electronjs.org/)
 [![React](https://img.shields.io/badge/React-UI-ff5ec8?style=for-the-badge)](https://react.dev/)
+[![Stars](https://img.shields.io/github/stars/ding7015869-alt/pixel-anime-player?style=for-the-badge&color=yellow)](https://github.com/ding7015869-alt/pixel-anime-player/stargazers)
 
 ![Pixel Beat Idol demo](docs/media/demo.gif)
 
-一个 Electron + Vite + React 桌面音乐播放器：像素二次元舞台、原创角色、粒子特效、节拍分析、同步歌词、本地照片像素化，还有中英文界面切换。
+> 🎧 **桌面上开一场像素偶像演唱会。原创角色随节拍跳舞，六种视觉特效，歌词同步，照片像素化——全在本地完成。**
 
-An Electron + Vite + React desktop music player with a pixel-anime stage, original beat-reactive idols, particle effects, lyric sync, local photo pixelization, and a bilingual Chinese/English UI.
+[📥 下载 Windows 版](https://github.com/ding7015869-alt/pixel-anime-player/releases/latest) · [📢 推广文案](docs/launch-kit.md)
 
-[Download Windows build](https://github.com/ding7015869-alt/pixel-anime-player/releases/latest) · [Launch kit / 推广文案](docs/launch-kit.md)
+![social preview](docs/media/social-preview.png)
 
-![Pixel Beat Idol social preview](docs/media/social-preview.png)
+---
 
-## 亮点
+## ✨ 为什么你需要这个？
 
-- 中英文一键切换，默认中文，主界面按钮可随时切换。
-- 打开本地音乐文件或音乐文件夹，支持拖拽导入。
-- 歌单点击即播放，支持播放/暂停、上一首/下一首、进度条、音量控制。
-- 多首歌曲结束后自动连续播放下一首。
-- 支持导入 LRC/TXT 歌词，舞台上显示霓虹像素同步字幕。
-- 支持导入本地照片，在本机处理成像素风图片并保存 PNG。
-- 低频鼓点、中频旋律、高频闪光、动作强度实时显示。
-- 像素角色会跟随鼓点、旋律和高频闪光跳舞。
-- 综合、像素雨、音符、晶片、光束、爆裂六种特效可手动切换。
-- 大歌单虚拟滚动，窗口宽窄变化时自适应布局。
+市面上音乐播放器千篇一律：一个列表 + 一个进度条。**像素音浪姬**把听歌变成一场视觉演出——你投一首歌进去，像素偶像就在舞台上为你跳舞，鼓点、旋律、高音各自触发不同的动作和特效。
 
-## Features
+- 🎭 原创像素偶像角色，不是素材库拼凑
+- 🕺 节拍驱动舞蹈，每一帧都和音乐同步
+- ✨ 六种视觉特效一键切换
+- 🎤 桌面歌词，霓虹像素风格
+- 📸 照片变像素画，本机处理不传云端
+- 🌐 中英文界面一键切换
 
-- One-click Chinese/English switch directly on the main screen.
-- Import local audio files, folders, or drag audio into the window.
-- Click a playlist row to play, with transport controls, seek, and volume.
-- Auto-play the next track when the current one ends.
-- Import LRC/TXT lyrics for neon pixel lyric sync on the stage.
-- Import a local photo, pixelize it entirely in the browser canvas, and save a PNG.
-- Live bass, mid, treble, and motion meters.
-- Original pixel idols dance to the analysed music energy.
-- Six manually switchable visual modes: Mix, Pixel Rain, Notes, Crystals, Beams, and Burst.
-- Virtualized large playlists and responsive desktop layout.
+---
 
-## 开发运行 / Development
+## 🎯 亮点
+
+- 🈶 中英文一键切换，默认中文
+- 🎵 打开本地音乐文件/文件夹，支持拖拽导入
+- ▶️ 完整播控：播放/暂停、上/下一首、进度条、音量
+- 🔁 自动连播，歌单放完不停
+- 🎤 导入 LRC/TXT 歌词，舞台上霓虹像素同步字幕
+- 📸 导入照片，浏览器本地像素化，保存 PNG
+- 📊 实时音频分析：低频鼓点、中频旋律、高频闪光、动作强度
+- 💃 像素角色随鼓点/旋律/高频跳舞
+- ✨ 六种视觉特效：综合 / 像素雨 / 音符 / 晶片 / 光束 / 爆裂
+- 📜 大歌单虚拟滚动，窗口自适应布局
+
+---
+
+## 📥 系统要求
+
+| | 最低 |
+|------|------|
+| 系统 | Windows 10+ (x64) |
+| 内存 | 4 GB |
+| 存储 | 200 MB |
+| 显卡 | 支持 WebGL |
+
+> 🍎 macOS / 🐧 Linux 用户可以从源码运行（见下方开发指南）
+
+---
+
+## 🚀 下载 & 运行
+
+### Windows 用户
+
+👉 **[下载最新版本](https://github.com/ding7015869-alt/pixel-anime-player/releases/latest)**
+
+下载 `像素音浪姬-win-x64.zip`，解压后双击 `像素音浪姬.exe` 即可。
+
+> ⚠️ 解压后保留整个文件夹，不要只拷贝 exe 文件。
+
+### 开发者 / macOS / Linux
 
 ```bash
+git clone https://github.com/ding7015869-alt/pixel-anime-player.git
+cd pixel-anime-player
 npm install
 npm run electron:dev
 ```
 
-网页预览 / Web preview:
+网页预览（不含 Electron 壳）：
 
 ```bash
 npm run dev
 ```
 
-## 构建 / Build
+---
+
+## 🔨 构建
 
 ```bash
 npm run build
-npm run dist:win
+npm run dist:win          # Windows x64 解包版
+npm run dist:win:portable # 便携版
+npm run dist:win:installer # 安装器
 ```
 
-`npm run dist:win` 会生成 Windows x64 解包目录：
+---
 
-```text
-release/win-unpacked/像素音浪姬.exe
-```
+## 🛠 技术栈
 
-移动到 Windows 时必须保留整个 `win-unpacked` 文件夹，不要只单独拷走 exe。
+| 层 | 技术 |
+|----|------|
+| 桌面框架 | Electron |
+| 前端 | React + Vite + TypeScript |
+| 音频分析 | Web Audio API |
+| 像素渲染 | Canvas 2D |
+| 视觉特效 | 自研粒子系统 |
 
-`npm run dist:win` creates a Windows x64 unpacked app folder. Keep the whole `win-unpacked` folder together when moving it to Windows.
+---
 
-## 便携版和安装器 / Portable and Installer
+## 📸 更多截图
 
-脚本已保留：
+| 主舞台 | 歌词同步 | 照片像素化 |
+|--------|----------|------------|
+| ![stage](docs/media/demo.gif) | 见上方 GIF | 见上方 GIF |
 
-```bash
-npm run dist:win:portable
-npm run dist:win:installer
-```
+---
 
-在 Apple Silicon macOS 上，这两个单文件目标可能因为构建工具里的 x86 `makensis` / `wine64` 不能运行而失败。需要单文件安装包时，建议在 Windows 或兼容环境里执行。
+## 📄 License
 
-## License
+MIT — 自由使用、修改、分发。
 
-MIT
+---
+
+## 🌟 Star History
+
+喜欢的话点个 ⭐ 吧～
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ding7015869-alt/pixel-anime-player&type=date)](https://star-history.com/#ding7015869-alt/pixel-anime-player&Date)
